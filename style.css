@@ -5,30 +5,43 @@
 .nav-link {
     color: white;
 }
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('./assets/images/jakub-dziubak-XtUd5SiX464-unsplash-idk.jpg');
-    background-size:cover;
-    position:relative;
+
+.bgimage{
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-/* text css above hero image*/
+
+.bgimage::before {    
+      content: "";
+      background-image: url('./assets/images/jakub-dziubak-XtUd5SiX464-unsplash.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.5;
+}
+
 .hero_title {
     font-size: 4.5rem;
 }
 .hero_desc {
     font-size: 2rem;
 }
+
 .hero-text {
     text-align: center;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #213555;
-
 }
-
 
 /* About */
 .imageAboutPage {
