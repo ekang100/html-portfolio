@@ -1,12 +1,30 @@
-/* display background color black on navbar scroll */
-.navbar {
-    background-color: #213555;
-}
-.nav-link {
-    color: white;
+/* Nav Bar */
+body {
+    font-family: 'Vollkorn', serif;
+    background-color: #f2d8bd;
 }
 
-.bgimage{
+a.nav-link {
+    color: #213555 !important;
+    font-size: 1.2rem;
+}
+
+a.nav-link:hover {
+    color: #4F709C !important;
+}
+
+a.navbar-brand {
+    font-size: 1.2rem;
+    color: #213555 !important;
+}
+
+a.navbar-brand:hover {
+    color: #4F709C !important;
+}
+
+
+/* Home */
+#home.bgimage{
     position: relative; 
     height: 100vh;
     width: 100%;
@@ -27,12 +45,14 @@
       opacity: 0.5;
 }
 
+
 .hero_title {
     font-size: 4.5rem;
 }
 .hero_desc {
     font-size: 2rem;
 }
+
 
 .hero-text {
     text-align: center;
@@ -44,6 +64,7 @@
 }
 
 /* About */
-.imageAboutPage {
-    width: 100%;
+#About {
+    align-items: center;
+    justify-content: center;
 }
