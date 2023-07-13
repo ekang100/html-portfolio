@@ -69,3 +69,17 @@ var TxtRotate = function(el, toRotate, period) {
       });
     });
   });
+
+// Make contact items clickable
+document.addEventListener("DOMContentLoaded", function() {
+  var clickableCards = document.querySelectorAll(".small");
+  clickableCards.forEach(function(card) {
+    card.addEventListener("click", function() {
+      var link = card.dataset.link;
+      if (link) {
+        window.location.href = link;
+      }
+    });
+  });
+});
+
