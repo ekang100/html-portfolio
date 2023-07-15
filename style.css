@@ -1,8 +1,45 @@
-/* Nav Bar */
+/* Responsive font size */
+
 body {
     font-family: 'Raleway', sans-serif !important;
-    background-color: #f2d8bd;
 }
+
+@media (min-width: 992px) {
+    .card-text {
+        font-size: calc(25% + 0.5vw + 0.5vh);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .fun h5, .fun i, .fun p, .fun li {
+        font-size: calc(50% + 0.5vw + 0.5vh) !important;
+    }
+}
+
+@media ((min-width: 769px) and (max-width: 1200px)) {
+    .fun h5, i {
+        font-size: calc(25% + 0.5vw + 0.5vh);
+    }
+    .fun li, .fun p {
+        font-size: calc(10% + 0.5vw + 0.5vh);
+    }
+    .footnote {
+        font-size: calc(5% + 0.5vw + 0.5vh) !important;
+    }
+}
+
+
+
+.content h1 {
+    font-size: calc(75% + 1vw + 1vh) !important;
+}
+
+.content p {
+    font-size: calc(50% + 0.5vw + 0.5vh) !important;
+}
+
+/* Nav Bar */
 
 a.nav-link {
     color: #213555 !important;
@@ -28,7 +65,7 @@ a.navbar-brand:hover {
     position: absolute;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #home.bgimage::before {
@@ -65,11 +102,12 @@ a.navbar-brand:hover {
 
 
 /* About */
+/*
 .about {
     position: absolute;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 .about::before {
     background-image: url('./assets/images/cafe.webp'); 
@@ -85,6 +123,7 @@ a.navbar-brand:hover {
     opacity: 0.5;
     z-index: -1;
 }
+*/
 
 .container#About {
     display: flex;
@@ -137,14 +176,17 @@ a.navbar-brand:hover {
 } 
 
 /* Duke */
+/*
 .duke {
     position: absolute;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 .duke::before {
     background-image: url('./assets/images/coffee-beans.jpg'); 
+    background-repeat: repeat;
+    width: 100%;
     content: "";
     background-size: cover;
     background-position: center;
@@ -156,11 +198,29 @@ a.navbar-brand:hover {
     left: 0;
     opacity: 0.5;
     z-index: -1;
+} */
+
+.bg-container {
+    overflow: hidden;
+    position: relative;
+}
+  
+.bg {
+    opacity: 0.6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+  
+.bg-content {
+    position: relative;
 }
 
 .container#duke {
     margin-top: 75px;
-}
+} 
 
 .container#duke > h1 {
     text-align: center;
@@ -192,11 +252,12 @@ a.navbar-brand:hover {
 }
 
 /* Fun */
+/*
 .fun {
     position: absolute;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 .fun::before {
     background-image: url('./assets/images/iced-coffee.jpg'); 
@@ -212,22 +273,63 @@ a.navbar-brand:hover {
     opacity: 0.5;
     z-index: -1;
 }
+*/
+
+.container#Fun h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container#Fun {
+    margin-top: 75px;
+}
+
+.container#Fun {
+    color: #213555;
+}
 
 .fun-card {
     display: flex;
     flex-direction: row;
+    height: 75vh;
     padding: 20px;
-    align-items: center;
     background-color: #F5EFE7;
+    margin-bottom: 20px;
 }
 
-/* Contact */
+@media (max-width: 767.98px) {
+    .fun-card {
+      margin-right: 0;
+    }
+  }
 
+.fun li {
+    margin-top: 10px;
+}
+
+.fun a {
+    text-decoration: none;
+    color: #213555;
+}
+
+.fun .tent {
+    text-decoration: underline !important;
+}
+
+.fun a:hover {
+    color: #4F709C;
+}
+
+.fun .footnote {
+    font-size: 12px;
+}
+/* Contact */
+/*
 .contact {
     position: absolute;
     height: 100vh;
     width: 100%;
-    overflow: hidden;
+    overflow: auto;
 }
 .contact::before {
     background-image: url('./assets/images/coffee-three.jpg'); 
@@ -242,14 +344,14 @@ a.navbar-brand:hover {
     left: 0;
     opacity: 0.5;
     z-index: -1;
-}
+}*/
 
 .container#Contact {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #213555
+    color: #213555;
 }
 
 .contact-card {
@@ -288,3 +390,4 @@ a.navbar-brand:hover {
     transition: 0.5s;
     cursor: pointer;
 }
+
