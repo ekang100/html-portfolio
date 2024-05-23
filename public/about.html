@@ -21,9 +21,10 @@
         .bg-container {
             position: relative;
             text-align: center;
-            color: rgba(255, 255, 255, 0.9);;
-            height: 100vh;
+            color: rgba(255, 255, 255, 0.9);
+            min-height: 100vh;
             background: url('../assets/images/cafe.webp') no-repeat center center/cover;
+            padding-top: 70px; /* Ensure content is not hidden behind navbar */
         }
 
         .navbar {
@@ -71,12 +72,26 @@
                 font-size: 1.2rem;
             }
 
+            .about-card {
+                padding: 15px;
+            }
+
             .about-card .content h1 {
                 font-size: 1.5rem;
             }
 
             .about-card .content p {
                 font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .about-card .content h1 {
+                font-size: 1.2rem;
+            }
+
+            .about-card .content p {
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -127,5 +142,6 @@
 </body>
 
 </html>
+
 
 
