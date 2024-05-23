@@ -1,66 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>About Page</title>
-        <link rel="stylesheet" href="../style.css">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://kit.fontawesome.com/1fd08a4bd3.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/1fd08a4bd3.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bg-container {
+            position: relative;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.9);;
+            height: 100vh;
+            background: url('../assets/images/cafe.webp') no-repeat center center/cover;
+        }
+
+        .navbar {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .navbar-nav .nav-link {
+            color: #333 !important;
+        }
+
+        .about-card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: left;
+            color: #333;
+        }
+
+        .about-card .image img {
+            border-radius: 50%;
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-card .content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-card .content p {
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-brand,
+            .nav-link {
+                font-size: 1.2rem;
+            }
+
+            .about-card .content h1 {
+                font-size: 1.5rem;
+            }
+
+            .about-card .content p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+
 <body>
-  <script src="../script.js"></script>
-<div class="about bg-container">
-  <img class="bg" src="../assets/images/cafe.webp" alt="">
-  <div class="bg-content">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-          <a class="navbar-brand active" href="../index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./duke.html">Duke</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./fun.html">For Fun</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact Me</a>
-              </li>
-            </ul>
-          </div>
+    <script src="../script.js"></script>
+    <div class="bg-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                <a class="navbar-brand active" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./duke.html">Duke</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./fun.html">For Fun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container" id="About">
+            <div class="about-card">
+                <div class="image">
+                    <img src="../assets/images/self.jpg" alt="Profile Picture">
+                </div>
+                <div class="content">
+                    <h1>About Me</h1>
+                    <p>I am a student at <a href="https://duke.edu/" target="_blank">Duke University</a> studying Computer Science and Statistics. I am interested in applying my skills in SWE, PM, and other technical roles where I can problem-solve, learn, and make things happen.</p>
+                    <p>Outside of my academics and student orgs, I enjoy reading, exploring restaurants, and drinking coffee in my quest to find the best iced mocha latte. Currently, my favorite is from <a href="https://beyucaffe.com/">Beyu</a> on campus.</p>
+                    <p>I'm from Williamsburg, Virginia - a small, historic town you probably visited for your 6th-grade field trip. Born in North Carolina, however, returning to Duke has been a full-circle experience, and I call Durham home as well. In the future, I look forward to exploring new places as I immerse myself in new experiences.</p>
+                </div>
+            </div>
         </div>
-    </nav>
-
-    <div class="container" id="About">
-      <div class="about-card">
-        <div class="image">
-          <img src="../assets/images/self.jpg" alt="Profile Picture" width="300">
-      </div>
-      <div class="content">
-          <h1>About Me</h1>
-          <p class="test">I am a student at <a href="https://duke.edu/" target="_blank">Duke University</a> studying Computer Science and Statistics. I am interested in applying my skills in SWE, PM, and other technical roles where I can problem-solve, learn, and make things happen.</p>
-          <p>Outside of my academics and student orgs, I enjoy reading, exploring restaurants, and drinking coffee in my quest to find the best iced mocha latte.
-            Currently, my favorite is from <a href="https://beyucaffe.com/">Beyu</a> on campus.
-          </p>
-          <p>I'm from Williamsburg, Virginia - a small, historic town you probably visited for your 6th-grade field trip. Born in North Carolina, however, returning to Duke has been a full-circle experience, and I call Durham home as well.
-            In the future, I look forward to exploring new places as I immerse myself in new experiences.
-          </p>
-      </div>
-      </div>
-  </div>
-</div>
-</div>
-
+    </div>
 </body>
+
 </html>
+
 

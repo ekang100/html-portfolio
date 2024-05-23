@@ -10,129 +10,204 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/1fd08a4bd3.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <style>
+        .navbar {
+            background: rgba(255, 255, 255, 0.9);
+        }
+
+        .navbar-nav .nav-link {
+            color: #333 !important;
+        }
+
+        body {
+            font-family: 'Raleway', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .bg-container {
+            position: relative;
+            text-align: center;
+            color: white;
+            min-height: 100vh;
+            background: url('../assets/images/iced-coffee.jpg') no-repeat center center/cover;
+            overflow: auto;
+        }
+
+        .fun-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .fun-card h5 {
+            color: #333;
+        }
+
+        .fun-card a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .fun-card a:hover {
+            text-decoration: underline;
+        }
+
+        .fa-li {
+            margin-right: 10px;
+        }
+
+        .footnote {
+            font-size: 0.8em;
+            color: #666;
+        }
+
+        /* Custom media queries */
+        @media (max-width: 1199px) {
+            .fun-card {
+                margin-bottom: 30px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            .fun-card {
+                margin-bottom: 20px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .fun-card {
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .fun-card {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="fun bg-container">
-    <img class="bg" src="../assets/images/iced-coffee.jpg">
-    <div class="bg-content">
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light">
-        <div class="container">
-          <a class="navbar-brand active" href="../index.html">Home</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./duke.html">Duke</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./fun.html">For Fun</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./contact.html">Contact Me</a>
-              </li>
-            </ul>
-          </div>
+    <div class="bg-container">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+            <div class="container">
+                <a class="navbar-brand active" href="../index.html">Home</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./duke.html">Duke</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./fun.html">For Fun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact Me</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container" id="Fun" style="padding-top: 70px;">
+            <h1>For Fun</h1>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                    <div class="fun-card">
+                        <div class="card-body">
+                            <h5><i class="fas servicesIcon fa-book fa-lg"></i> Reading</h5>
+                            <p class="card-text">
+                                <p>My current list of reads, reading, and to read</p>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Pachinko-National-Book-Award-Finalist-ebook/dp/B01GZY28JA/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1689379752&sr=1-1' target="_blank">Pachinko</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Jackson-Olympians-Paperback-covers-poster/dp/1484707230/ref=sr_1_2?crid=1ACSC6K9EL5VM&keywords=percy+jackson&qid=1689380428&sprefix=percy+jackson%2Caps%2C97&sr=8-2' target="_blank">Percy Jackson Series</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Little-Fires-Everywhere-Celeste-Ng/dp/0735224315/ref=sr_1_1?keywords=little+fires+everywhere+book&qid=1689380489&sprefix=little+fires%2Caps%2C91&sr=8-1' target="_blank">Little Fires Everywhere</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/One-Us-Lying-Bayview-High/dp/1524714755/ref=sr_1_1?keywords=one+of+us+is+lying+book&qid=1689380630&sprefix=one+of+us+i%2Caps%2C98&sr=8-1' target="_blank">One of Us Is Lying</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Swipe-Unlock-Technology-Business-Strategy/dp/1976182190/ref=sr_1_1?crid=2THV6XF8DPDAS&keywords=swipe+to+unlock&qid=1689380676&sprefix=swipe+to+unlock%2Caps%2C86&sr=8-1' target="_blank">Swipe to Unlock</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://www.amazon.com/Free-Food-Millionaires-Min-Jin/dp/153872202X/ref=sr_1_1?keywords=free+food+for+millionaires+by+min+jin+lee&qid=1689380717&sprefix=free+food%2Caps%2C87&sr=8-1' target="_blank">Free Food for Millionaires</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.amazon.com/Crying-Mart-Memoir-Michelle-Zauner/dp/1984898957/ref=sr_1_1?crid=3U7XJEDMF2TL0&keywords=crying+in+h+mart&qid=1689380760&sprefix=crying+in+hmar%2Caps%2C92&sr=8-1' target="_blank">Crying in H Mart</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://sarahjmaas.com/' target="_blank">Sarah J. Maas Books</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                    <div class="fun-card">
+                        <div class="card-body">
+                            <h5><i class="fas fa-solid fa-tv fa-lg"></i> Watching</h5>
+                            <p class="card-text">
+                                <p>My current list of movies and shows/kdramas</p>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/80232398' target="_blank">Bridgerton</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/81397077' target="_blank">Fubar</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/81396545' target="_blank">The Recruit</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.viki.com/tv/23205c-descendants-of-the-sun' target="_blank">Descendants of the Sun</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://ondisneyplus.disney.com/show/secret-invasion' target="_blank">Secret Invasion</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://www.netflix.com/title/81159258' target="_blank">Crash Landing on You</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.imdb.com/title/tt8946378/' target="_blank">Knives Out</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.netflix.com/title/81447461' target="_blank">Beef</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.netflix.com/title/80234304' target="_blank">The Queen's Gambit</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                    <div class="fun-card">
+                        <div class="card-body">
+                            <h5><i class="fa-solid fa-music fa-lg"></i> Listening</h5>
+                            <p class="card-text">
+                                <p>My current list of songs and podcasts</p>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=amOSaNX7KJg' target="_blank">Way Back Home (Shaun)</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=1OxOHtD0RDw' target="_blank">I Just Wanna Shine (Fitz & The Tantrums)</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=RsU7gUh6OvI' target="_blank">Wildflowers (Maddie Poppe)</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=UGZ31GqQgoc' target="_blank">Trade a Moment (Evening Traveler)</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=Qut5e3OfCvg' target="_blank">Symphony No. 9 (Dvorak)</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.theverge.com/the-vergecast' target="_blank">The Vergecast</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://giggly-squad.com/' target="_blank">Giggly Squad</a></li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-3 mb-4">
+                    <div class="fun-card">
+                        <div class="card-body">
+                            <h5><i class="fa-solid fa-basketball fa-lg"></i> Basketball*-ing</h5>
+                            <p class="card-text">
+                                <p>My list of <a class='tent' href='https://en.wikipedia.org/wiki/Krzyzewskiville'>tenting</a>** necessities and resources</p>
+                                <ul class="fa-ul">
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.dukechronicle.com/article/2023/01/duke-mens-basketball-tenting-test-trivia-north-carolina-unc-krzyzewskiville-kville-line-monitors' target="_blank">Study Guide</a></li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Master Schedule</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Tarps</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Pallets</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Cardboard</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Sleeping Bag</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Hand Warmers</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>More Warm Things</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Tent (sleeps 10-12)</li>
+                                </ul>
+                                <p class="footnote">*I don't play basketball</p>
+                                <p class="footnote">**The act of (maybe) sleeping in a tent for weeks to watch the Duke/UNC rivalry game</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </nav>
-
-  <div class="container" id="Fun">
-    <h1>For Fun</h1>
-    <div class="row">
-      <div class="col-sm-6 col-md-3">
-        <div class="fun-card">
-          <div class="card-body">
-            <h5> <i class='fas servicesIcon fa-book fa-lg'></i>  Reading</h5>
-            <p class="card-text">
-              <p>My current list of reads, reading, and to read</p>
-              <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Pachinko-National-Book-Award-Finalist-ebook/dp/B01GZY28JA/ref=tmm_kin_swatch_0?_encoding=UTF8&qid=1689379752&sr=1-1' target="_blank">Pachinko</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Jackson-Olympians-Paperback-covers-poster/dp/1484707230/ref=sr_1_2?crid=1ACSC6K9EL5VM&keywords=percy+jackson&qid=1689380428&sprefix=percy+jackson%2Caps%2C97&sr=8-2' target="_blank">Percy Jackson Series</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Little-Fires-Everywhere-Celeste-Ng/dp/0735224315/ref=sr_1_1?keywords=little+fires+everywhere+book&qid=1689380489&sprefix=little+fires%2Caps%2C91&sr=8-1' target="_blank">Little Fires Everywhere</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/One-Us-Lying-Bayview-High/dp/1524714755/ref=sr_1_1?keywords=one+of+us+is+lying+book&qid=1689380630&sprefix=one+of+us+i%2Caps%2C98&sr=8-1' target="_blank">One of Us Is Lying</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.amazon.com/Swipe-Unlock-Technology-Business-Strategy/dp/1976182190/ref=sr_1_1?crid=2THV6XF8DPDAS&keywords=swipe+to+unlock&qid=1689380676&sprefix=swipe+to+unlock%2Caps%2C86&sr=8-1' target="_blank">Swipe to Unlock</a></li>
-              <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://www.amazon.com/Free-Food-Millionaires-Min-Jin/dp/153872202X/ref=sr_1_1?keywords=free+food+for+millionaires+by+min+jin+lee&qid=1689380717&sprefix=free+food%2Caps%2C87&sr=8-1' target="_blank">Free Food for Millionares</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.amazon.com/Crying-Mart-Memoir-Michelle-Zauner/dp/1984898957/ref=sr_1_1?crid=3U7XJEDMF2TL0&keywords=crying+in+h+mart&qid=1689380760&sprefix=crying+in+hmar%2Caps%2C92&sr=8-1' target="_blank">Crying in H Mart</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://sarahjmaas.com/' target="_blank">Sarah J. Maas Books</a></li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="fun-card">
-          <div class="card-body">
-            <h5> <i class="fas fa-solid fa-tv fa-lg"></i>  Watching</h5>
-            <p class="card-text">
-              <p>My current list of movies and shows/kdramas</p>
-              <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/80232398' target="_blank">Bridgerton</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/81397077' target="_blank">Fubar</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.netflix.com/title/81396545' target="_blank">The Recruit</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.viki.com/tv/23205c-descendants-of-the-sun' target="_blank">Descendants of the Sun</a></li>
-              <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://ondisneyplus.disney.com/show/secret-invasion' target="_blank">Secret Invasion</a></li>
-              <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span><a href='https://www.netflix.com/title/81159258' target="_blank">Crash Landing on You</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.imdb.com/title/tt8946378/' target="_blank">Knives Out</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.netflix.com/title/81447461' target="_blank">Beef</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://www.netflix.com/title/80234304' target="_blank">The Queen's Gambit</a></li>
-              </ul>
-            </p>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="fun-card">
-          <div class="card-body">
-            <h5> <i class="fa-solid fa-music fa-lg"></i>  Listening</h5>
-            <p class="card-text">
-              <p>My current list of songs and podcasts</p>
-              <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=amOSaNX7KJg' target="_blank">Way Back Home (Shaun)</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=1OxOHtD0RDw' target="_blank">I Just Wanna Shine (Fitz & The Tantrums)</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=RsU7gUh6OvI' target="_blank">Wildflowers (Maddie Poppe)</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=UGZ31GqQgoc' target="_blank">Trade a Moment (Evening Traveler)</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.youtube.com/watch?v=Qut5e3OfCvg' target="_blank">Symphony No. 9 (Dvorak)</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.theverge.com/the-vergecast' target="_blank">The Vergecast</a></li>
-              <li><span class="fa-li"><i class="fas fa-square"></i></span><a href='https://giggly-squad.com/' target="_blank">Giggly Squad</a></li>
-              </ul>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="fun-card">
-          <div class="card-body">
-            <h5> <i class="fa-solid fa-basketball fa-lg"></i> Basketball*-ing</h5>
-            <p class="card-text">
-              <p>My list of <a class='tent' href='https://en.wikipedia.org/wiki/Krzyzewskiville'>tenting</a>** necessities and resources</p>
-              <ul class="fa-ul">
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span><a href='https://www.dukechronicle.com/article/2023/01/duke-mens-basketball-tenting-test-trivia-north-carolina-unc-krzyzewskiville-kville-line-monitors' target="_blank">Study Guide</a></li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Master Schedule</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Tarps</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Pallets</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Cardboard</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Sleeping Bag</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Hand Warmers</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>More Warm Things</li>
-              <li><span class="fa-li"><i class="fas fa-check-square"></i></span>Tent (sleeps 10-12)</li>
-              </ul>
-              <p class="footnote">*I don't play basketball</p>
-              <p class="footnote">**The act of (maybe) sleeping in a tent for weeks to watch the Duke/UNC rivalry game</p>
-            </p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-</div>
-
-</div>
 </body>
 </html>
+
+
